@@ -1,0 +1,120 @@
+{
+  "timestamp": "2025-07-16T16:22:34.882280",
+  "test_results": {
+    "系统管理功能": {
+      "success": true,
+      "results": {
+        "health_check": {
+          "success": true,
+          "exchanges": [
+            "backpack"
+          ],
+          "healthy_count": 0
+        },
+        "supported_symbols": {
+          "backpack": 35
+        },
+        "exchange_info": {
+          "backpack": true
+        }
+      },
+      "summary": "健康检查完成，0 个交易所健康"
+    },
+    "市场数据功能": {
+      "success": true,
+      "results": {
+        "backpack": {
+          "ticker": true,
+          "tickers": true,
+          "orderbook": true,
+          "ohlcv": false,
+          "trades": false
+        }
+      },
+      "summary": "市场数据测试完成，覆盖 1 个交易所"
+    },
+    "账户管理功能": {
+      "success": true,
+      "results": {
+        "all_balances": true,
+        "all_positions": true,
+        "backpack_balance": true,
+        "backpack_positions": true
+      },
+      "summary": "账户管理测试完成，检查了 1 个交易所"
+    },
+    "交易设置功能": {
+      "success": true,
+      "results": {
+        "backpack": {
+          "leverage": true,
+          "margin_mode": true
+        }
+      },
+      "summary": "交易设置测试完成，测试了 1 个交易所"
+    },
+    "订单管理功能": {
+      "success": true,
+      "results": {
+        "backpack": {
+          "open_orders": 0,
+          "history_orders": 0,
+          "create_order": true,
+          "order_status": true
+        }
+      },
+      "summary": "订单管理测试完成，创建了 1 个测试订单"
+    },
+    "批量操作功能": {
+      "success": true,
+      "results": {
+        "batch_cancel": {
+          "total": 1,
+          "success": 1,
+          "details": {
+            "backpack:3383539012": "OrderData(id='3383539012', client_id=None, symbol='SOL_USDC_PERP', side=<OrderSide.BUY: 'buy'>, type=<OrderType.LIMIT: 'limit'>, amount=Decimal('0'), price=Decimal('0'), filled=Decimal('0'), remaining=Decimal('0'), cost=Decimal('0'), average=Decimal('0'), status=<OrderStatus.CANCELED: 'canceled'>, timestamp=datetime.datetime(2025, 7, 16, 16, 22, 4, 828509), updated=None, fee=None, trades=[], params={}, raw_data={'clientId': None, 'createdAt': 1752654124620, 'executedQuantity': '0', 'executedQuoteQuantity': '0', 'id': '3383539012', 'orderType': 'Limit', 'postOnly': False, 'price': '155.8', 'quantity': '0.1', 'reduceOnly': None, 'relatedOrderId': None, 'selfTradePrevention': 'RejectTaker', 'side': 'Bid', 'status': 'Cancelled', 'stopLossLimitPrice': None, 'stopLossTriggerBy': None, 'stopLossTriggerPrice': None, 'strategyId': None, 'symbol': 'SOL_USDC_PERP', 'takeProfitLimitPrice': None, 'takeProfitTriggerBy': None, 'takeProfitTriggerPrice': None, 'timeInForce': 'GTC', 'triggerBy': None, 'triggerPrice': None, 'triggerQuantity': None, 'triggeredAt': None})"
+          }
+        }
+      },
+      "summary": "批量操作测试完成，取消了 1 个订单"
+    },
+    "统计信息功能": {
+      "success": true,
+      "results": {
+        "execution_stats": {
+          "active_orders": 0,
+          "total_orders": 1,
+          "successful_orders": 1,
+          "failed_orders": 0,
+          "success_rate": 100.0,
+          "total_volume": 0.0,
+          "registered_exchanges": 1,
+          "supported_symbols": 35
+        }
+      },
+      "summary": "统计信息测试完成，处理了 1 个订单"
+    },
+    "交易执行功能": {
+      "success": false,
+      "plan_id": "test_single_backpack_20250716_162204",
+      "execution_time": null,
+      "error": "订单执行超时",
+      "type": "single_exchange"
+    }
+  },
+  "execution_stats": {
+    "active_orders": 2,
+    "total_orders": 3,
+    "successful_orders": 1,
+    "failed_orders": 2,
+    "success_rate": 33.33,
+    "total_volume": 0.0,
+    "registered_exchanges": 1,
+    "supported_symbols": 35
+  },
+  "exchanges_tested": [
+    "backpack"
+  ],
+  "test_symbol": "SOL_USDC_PERP",
+  "test_amount": 0.1
+}

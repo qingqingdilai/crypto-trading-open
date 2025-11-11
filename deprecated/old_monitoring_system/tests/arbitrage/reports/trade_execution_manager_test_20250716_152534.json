@@ -1,0 +1,120 @@
+{
+  "timestamp": "2025-07-16T15:25:34.190235",
+  "test_results": {
+    "系统管理功能": {
+      "success": true,
+      "results": {
+        "health_check": {
+          "success": true,
+          "exchanges": [
+            "backpack"
+          ],
+          "healthy_count": 0
+        },
+        "supported_symbols": {
+          "backpack": 35
+        },
+        "exchange_info": {
+          "backpack": true
+        }
+      },
+      "summary": "健康检查完成，0 个交易所健康"
+    },
+    "市场数据功能": {
+      "success": true,
+      "results": {
+        "backpack": {
+          "ticker": true,
+          "tickers": true,
+          "orderbook": true,
+          "ohlcv": false,
+          "trades": false
+        }
+      },
+      "summary": "市场数据测试完成，覆盖 1 个交易所"
+    },
+    "账户管理功能": {
+      "success": true,
+      "results": {
+        "all_balances": true,
+        "all_positions": true,
+        "backpack_balance": true,
+        "backpack_positions": true
+      },
+      "summary": "账户管理测试完成，检查了 1 个交易所"
+    },
+    "交易设置功能": {
+      "success": true,
+      "results": {
+        "backpack": {
+          "leverage": true,
+          "margin_mode": true
+        }
+      },
+      "summary": "交易设置测试完成，测试了 1 个交易所"
+    },
+    "订单管理功能": {
+      "success": true,
+      "results": {
+        "backpack": {
+          "open_orders": 0,
+          "history_orders": 0,
+          "create_order": true,
+          "order_status": false
+        }
+      },
+      "summary": "订单管理测试完成，创建了 1 个测试订单"
+    },
+    "批量操作功能": {
+      "success": true,
+      "results": {
+        "batch_cancel": {
+          "total": 1,
+          "success": 0,
+          "details": {
+            "backpack:": false
+          }
+        }
+      },
+      "summary": "批量操作测试完成，取消了 0 个订单"
+    },
+    "统计信息功能": {
+      "success": true,
+      "results": {
+        "execution_stats": {
+          "active_orders": 0,
+          "total_orders": 1,
+          "successful_orders": 1,
+          "failed_orders": 0,
+          "success_rate": 100.0,
+          "total_volume": 0.0,
+          "registered_exchanges": 1,
+          "supported_symbols": 35
+        }
+      },
+      "summary": "统计信息测试完成，处理了 1 个订单"
+    },
+    "交易执行功能": {
+      "success": false,
+      "plan_id": "test_single_backpack_20250716_152532",
+      "execution_time": null,
+      "error": "订单参数验证失败",
+      "type": "single_exchange"
+    }
+  },
+  "execution_stats": {
+    "active_orders": 0,
+    "total_orders": 1,
+    "successful_orders": 1,
+    "failed_orders": 1,
+    "success_rate": 100.0,
+    "total_volume": 0.0,
+    "registered_exchanges": 1,
+    "supported_symbols": 35
+  },
+  "exchanges_tested": [
+    "backpack"
+  ],
+  "test_symbol": "SOL_USDC_PERP",
+  "test_amount": 0.1
+}
